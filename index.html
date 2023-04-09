@@ -13,8 +13,6 @@
     
 </head>
 <body>
-     
-    
 <!--javaScript para togge menu-->
     <script>
         var navLinks = document.getElementById("navLinks");
@@ -24,11 +22,8 @@
         function hideMenu(){
             navLinks.style.right="-200px";
         }
-
-
     </script>
     <!--campus-->
-    
     <!--facilidades-->
     <section class="facilities" id="facilities">
         <h1>E-book Bitcoins </h1>
@@ -54,7 +49,6 @@
               <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
               </a>
       </div>
-
         <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
         <script>
           function initPayPalButton() {
@@ -64,31 +58,23 @@
                 color: 'blue',
                 layout: 'vertical',
                 label: 'buynow',
-                
               },
-      
               createOrder: function(data, actions) {
                 return actions.order.create({
                   purchase_units: [{"description":"e-book bitcoin","amount":{"currency_code":"BRL","value":50}}]
                 });
               },
-      
               onApprove: function(data, actions) {
                 return actions.order.capture().then(function(orderData) {
-                  
                   // Full available details
                   console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-      
                   // Show a success message within this page, e.g.
                   const element = document.getElementById('paypal-button-container');
                   element.innerHTML = '';
                   element.innerHTML = '<h3>Thank you for your payment!</h3>';
-      
                   // Or go to another URL:  actions.redirect('thank_you.html');
-                  
                 });
               },
-      
               onError: function(err) {
                 console.log(err);
               }
@@ -96,10 +82,6 @@
           }
           initPayPalButton();
         </script>
-    
-             
-               
-        
   </section>
 </body>
 </html> 
