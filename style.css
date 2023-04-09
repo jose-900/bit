@@ -14,14 +14,31 @@
 }
 .header .logo
 {
-    color: #ee1f1f;
+    color: #fff;
     text-decoration: none;
     font-size: 24px;
     text-transform: uppercase;
     font-size: 700;
     letter-spacing: 1px;
 }
- 
+.whats
+{
+    position: relative;
+    background: #10d88b;
+    box-shadow: 0 40px 20px #118fd8;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 45px;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    margin-top: 16px;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start;
+    margin-left: 45px;
+}   
 nav{
     display: flex;
     padding: 2% 6%;
@@ -169,7 +186,7 @@ h3{
 }
 .technology
 {
-    background: #e907b8;
+    background: #3f8ffc;
     width: 100%;
     padding: 100px;
     margin:auto;
@@ -218,7 +235,7 @@ h3{
 }
 
 .facilities{
-    background:#7008d1;
+    background:#162c3b;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -226,10 +243,10 @@ h3{
   
 }
 .facilities h1{
-    color: #e7c21c;
+    color: #fff;
 }
 .facilities p{
-    color: #ece919;
+    color: #fff;
 }
 .facilities-col{
     flex-basis: 31;
@@ -273,7 +290,7 @@ h3{
 }
 .footer
 {
-    background: #30e767;
+    background: #14ec92;
     padding: 20px 100px;
     display: flex;
     justify-content: center;
@@ -319,14 +336,6 @@ h3{
         display: flex;
         justify-content: center;
         align-items: center;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        height: 100vh;
+        
     }
 }
